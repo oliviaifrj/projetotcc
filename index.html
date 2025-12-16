@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#9a765a',
+                            dark: '#80624a',
+                            light: '#bca18d',
+                        },
+                        surface: '#fcf4eb',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <img src="https://i.ibb.co/Ndy0fgDs/ce6e3ae7-066a-412f-afd0-f12b8075418c.png" alt="Logo Cultura Niterói" class="h-8 w-auto mr-2">
+                        <span class="font-bold text-xl text-gray-800">Cultura Niterói</span>
+                    </a>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-brand text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Categorias</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Meus Ingressos</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden md:block">
+                        <input type="text" class="bg-gray-100 rounded-full pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand w-64" placeholder="Buscar eventos...">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                        </div>
+                    </div>
+                    <a href="login.html" class="text-gray-500 hover:text-gray-700 text-sm font-medium">Sair</a>
+                    <div class="h-8 w-8 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold border border-brand/20">
+                        U
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">Descubra os melhores</span>
+                            <span class="block text-brand xl:inline">eventos da cidade.</span>
+                        </h1>
+                        
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#eventos" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand hover:bg-brand-dark md:py-4 md:text-lg md:px-10">
+                                    Explorar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://uploads.cidadedeniteroi.com/2025/11/vivo-na-praia-niteroi-984x553.jpg" alt="Concert crowd">
+        </div>
+    </div>
+
+    <!-- Filtros / Categorias -->
+    <div id="eventos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="flex overflow-x-auto space-x-4 pb-4">
+            <button class="px-4 py-2 rounded-full bg-brand text-white text-sm font-medium whitespace-nowrap">Todos</button>
+            <button class="px-4 py-2 rounded-full bg-white border border-gray-300 text-gray-700 text-sm font-medium hover:bg-surface whitespace-nowrap">Teatro</button>
+            <button class="px-4 py-2 rounded-full bg-white border border-gray-300 text-gray-700 text-sm font-medium hover:bg-surface whitespace-nowrap">Festival</button>
+            <button class="px-4 py-2 rounded-full bg-white border border-gray-300 text-gray-700 text-sm font-medium hover:bg-surface whitespace-nowrap">Exposições</button>
+            <button class="px-4 py-2 rounded-full bg-white border border-gray-300 text-gray-700 text-sm font-medium hover:bg-surface whitespace-nowrap">Música</button>
+            <button class="px-4 py-2 rounded-full bg-white border border-gray-300 text-gray-700 text-sm font-medium hover:bg-surface whitespace-nowrap">Feiras</button>
+            <button class="px-4 py-2 rounded-full bg-white border border-gray-300 text-gray-700 text-sm font-medium hover:bg-surface whitespace-nowrap">Oficinas</button>
+        </div>
+    </div>
+
+    <!-- Lista de Eventos -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Próximos Eventos</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <a href="evento.html" class="group bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 block">
+                <div class="relative h-48 w-full">
+                    <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Evento Musical" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-white px-2 py-1 rounded-lg text-xs font-bold text-gray-900 shadow-sm">
+                        R$ 150
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="text-xs font-semibold tracking-wide text-brand uppercase mb-1">Música</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 truncate group-hover:text-brand transition-colors">Festival de Verão 2024</h3>
+                    <div class="flex items-center text-gray-500 text-sm mb-2">
+                        <i class="fa-regular fa-calendar mr-2"></i> 15 Dez, 2024 • 20:00
+                    </div>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <i class="fa-solid fa-location-dot mr-2"></i> Arena Central
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="evento.html" class="group bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 block">
+                <div class="relative h-48 w-full">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d43f7004742?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tech Conference" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute top-4 right-4 bg-white px-2 py-1 rounded-lg text-xs font-bold text-gray-900 shadow-sm">
+                        Grátis
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="text-xs font-semibold tracking-wide text-brand uppercase mb-1">Tecnologia</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 truncate group-hover:text-brand transition-colors">Tech Summit 2024</h3>
+                    <div class="flex items-center text-gray-500 text-sm mb-2">
+                        <i class="fa-regular fa-calendar mr-2"></i> 20 Jan, 2025 • 09:00
+                    </div>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <i class="fa-solid fa-location-dot mr-2"></i> Centro de Convenções
+                    </div>
+                </div>
+            </a>
+
+             <!-- Card 3 -->
+             <a href="evento.html" class="group bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100 block">
+                <div class="relative h-48 w-full">
+                    <img src="https://images.unsplash.com/photo-1514525253440-b393452e8d26?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Art Exhibition" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                     <div class="absolute top-4 right-4 bg-white px-2 py-1 rounded-lg text-xs font-bold text-gray-900 shadow-sm">
+                        R$ 40
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="text-xs font-semibold tracking-wide text-brand uppercase mb-1">Arte</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 truncate group-hover:text-brand transition-colors">Exposição Moderna</h3>
+                    <div class="flex items-center text-gray-500 text-sm mb-2">
+                        <i class="fa-regular fa-calendar mr-2"></i> 05 Fev, 2025 • 14:00
+                    </div>
+                    <div class="flex items-center text-gray-500 text-sm">
+                        <i class="fa-solid fa-location-dot mr-2"></i> Galeria de Arte
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="mt-10 text-center">
+            <button class="px-6 py-3 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-surface">
+                Carregar mais eventos
+            </button>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <p class="text-gray-400 text-sm">&copy; 2024 Cultura Niterói. Todos os direitos reservados.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-gray-500"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gray-500"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gray-500"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
