@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#9a765a',
+                            dark: '#80624a',
+                            light: '#bca18d',
+                        },
+                        surface: '#fcf4eb',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface h-screen flex items-center justify-center">
+
+    <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8 m-4">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold text-gray-800">Crie sua conta</h1>
+            <p class="text-gray-500 text-sm mt-2">Junte-se a nós e explore os melhores eventos.</p>
+        </div>
+
+        <!-- Form -->
+        <form action="login.html">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fa-regular fa-user text-gray-400"></i>
+                    </div>
+                    <input type="text" id="name" class="pl-10 block w-full border-gray-300 rounded-lg border p-2.5 focus:ring-brand focus:border-brand sm:text-sm outline-none transition" placeholder="Seu nome" required>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fa-regular fa-envelope text-gray-400"></i>
+                    </div>
+                    <input type="email" id="email" class="pl-10 block w-full border-gray-300 rounded-lg border p-2.5 focus:ring-brand focus:border-brand sm:text-sm outline-none transition" placeholder="seu@email.com" required>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Senha</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fa-solid fa-lock text-gray-400"></i>
+                    </div>
+                    <input type="password" id="password" class="pl-10 block w-full border-gray-300 rounded-lg border p-2.5 focus:ring-brand focus:border-brand sm:text-sm outline-none transition" placeholder="Criar senha" required>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <label for="confirm_password" class="block text-sm font-medium text-gray-700 mb-1">Confirmar Senha</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fa-solid fa-lock text-gray-400"></i>
+                    </div>
+                    <input type="password" id="confirm_password" class="pl-10 block w-full border-gray-300 rounded-lg border p-2.5 focus:ring-brand focus:border-brand sm:text-sm outline-none transition" placeholder="Repetir senha" required>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full flex justify-center py-2.5 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-brand hover:bg-brand-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand transition-colors">
+                Cadastrar
+            </button>
+        </form>
+
+        <!-- Footer -->
+        <div class="mt-6 text-center">
+            <p class="text-sm text-gray-600">
+                Já tem uma conta? 
+                <a href="login.html" class="font-medium text-brand hover:text-brand-dark">Faça Login</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
