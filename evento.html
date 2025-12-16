@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Evento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#9a765a',
+                            dark: '#80624a',
+                            light: '#bca18d',
+                        },
+                        surface: '#fcf4eb',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <div class="h-8 w-8 bg-brand rounded flex items-center justify-center mr-2">
+                            <i class="fa-solid fa-arrow-left text-white"></i>
+                        </div>
+                        <span class="font-bold text-gray-800">Voltar</span>
+                    </a>
+                </div>
+                 <div class="flex items-center space-x-4">
+                    <div class="h-8 w-8 rounded-full bg-brand/10 flex items-center justify-center text-brand font-bold border border-brand/20">
+                        U
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Imagem -->
+    <div class="w-full h-64 md:h-96 relative">
+        <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="w-full h-full object-cover" alt="Banner Evento">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="absolute bottom-0 left-0 w-full p-6 md:p-12">
+            <div class="max-w-7xl mx-auto">
+                <span class="bg-brand text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Música</span>
+                <h1 class="text-3xl md:text-5xl font-bold text-white mt-3 mb-2">Festival de Verão 2024</h1>
+                <p class="text-gray-200 text-lg"><i class="fa-solid fa-location-dot mr-2"></i> Arena Central, São Paulo</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            
+            <!-- Coluna Esquerda: Descrição -->
+            <div class="lg:col-span-2 space-y-8">
+                <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Sobre o Evento</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Prepare-se para a experiência musical mais aguardada do ano! O Festival de Verão 2024 reúne as maiores bandas nacionais e internacionais em um único palco. Serão 12 horas de música ininterrupta, praça de alimentação com food trucks variados, áreas de descanso e ativações de marcas parceiras.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        O evento contará com estrutura coberta, segurança reforçada e posto médico. Não perca a chance de viver momentos inesquecíveis com seus amigos e família. Garanta já o seu ingresso antecipado com desconto!
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Line-up</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-center p-3 bg-surface rounded-lg">
+                            <div class="h-10 w-10 rounded-full bg-brand/10 flex items-center justify-center text-brand mr-4 font-bold">18h</div>
+                            <div>
+                                <p class="font-bold text-gray-800">Abertura dos Portões</p>
+                                <p class="text-sm text-gray-500">DJ Set Aquecimento</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center p-3 bg-surface rounded-lg">
+                            <div class="h-10 w-10 rounded-full bg-brand/10 flex items-center justify-center text-brand mr-4 font-bold">20h</div>
+                            <div>
+                                <p class="font-bold text-gray-800">Banda The Rocks</p>
+                                <p class="text-sm text-gray-500">Rock Nacional</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center p-3 bg-surface rounded-lg">
+                            <div class="h-10 w-10 rounded-full bg-brand/10 flex items-center justify-center text-brand mr-4 font-bold">22h</div>
+                            <div>
+                                <p class="font-bold text-gray-800">Electro Vibe</p>
+                                <p class="text-sm text-gray-500">Atração Principal</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Coluna Direita: Ingresso e Info -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 sticky top-24">
+                    <div class="p-6 border-b border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Ingressos</h3>
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <p class="text-sm text-gray-500">Pista Comum</p>
+                                <p class="text-2xl font-bold text-gray-900">R$ 150,00</p>
+                            </div>
+                            <div class="flex items-center border border-gray-300 rounded-md">
+                                <button class="px-3 py-1 text-gray-600 hover:bg-surface border-r border-gray-300">-</button>
+                                <span class="px-3 py-1 font-medium text-gray-800">1</span>
+                                <button class="px-3 py-1 text-gray-600 hover:bg-surface border-l border-gray-300">+</button>
+                            </div>
+                        </div>
+                         <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <p class="text-sm text-gray-500">Área VIP</p>
+                                <p class="text-2xl font-bold text-gray-900">R$ 350,00</p>
+                            </div>
+                            <div class="flex items-center border border-gray-300 rounded-md">
+                                <button class="px-3 py-1 text-gray-600 hover:bg-surface border-r border-gray-300">-</button>
+                                <span class="px-3 py-1 font-medium text-gray-800">0</span>
+                                <button class="px-3 py-1 text-gray-600 hover:bg-surface border-l border-gray-300">+</button>
+                            </div>
+                        </div>
+                        <button class="w-full bg-brand text-white py-3 rounded-lg font-bold hover:bg-brand-dark transition shadow-md">
+                            Comprar Ingressos
+                        </button>
+                        <p class="text-center text-xs text-gray-400 mt-3">Pagamento seguro via Cartão ou Pix</p>
+                    </div>
+
+                    <div class="p-6 bg-surface rounded-b-xl">
+                        <h4 class="font-semibold text-gray-800 mb-3">Detalhes</h4>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fa-regular fa-calendar mt-1 mr-3 text-brand w-4"></i>
+                                <span>15 de Dezembro, 2024<br>Domingo</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i class="fa-regular fa-clock mt-1 mr-3 text-brand w-4"></i>
+                                <span>20:00 - 04:00</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i class="fa-solid fa-map-pin mt-1 mr-3 text-brand w-4"></i>
+                                <span>Av. Paulista, 1000 - Bela Vista<br>São Paulo - SP</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
